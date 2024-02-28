@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <h1>TABLA MULTIPLICAR</h1>
+
+          <script>
+            var numero;
+            
+            document.write("<table border=1>");
+                numero=parseInt(prompt("Dime el numero por el que multiplicar"));
+                i=1;
+                while (i<=10){
+                document.write("<tr><td>",numero,"*",i," ","=","</td>","<td>",numero*i,"</td></tr>");
+                i=i+1;
+                }
+            
+            document.write("</table>")
+        </script>
+    </body>
+</html>
