@@ -1,4 +1,4 @@
-body {
+tbody {
     font-family: sans-serif;
     margin: 20px;
   }
@@ -41,5 +41,6 @@ body {
   }
   
   a:hover {
-    background-color: #f7f7f7;
+    background-color: 000000;
+    color: ffffff;
   }
