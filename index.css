@@ -14,11 +14,11 @@ body {
   }
   
   th, td {
-    padding: 10px;
     text-align: center;
   }
   
   th {
+    padding: 10px;
     background-color: #ddd;
   }
   
