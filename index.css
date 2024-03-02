@@ -16,15 +16,17 @@ body {
   th, td {
     padding: 10px;
     text-align: center;
+    border: 2px solid #000000;
   }
   
   th {
-    background-color: #ddd;
+    background-color: #000000;
+    color: #ffffff;
   }
   
   td {
-    border: 1px solid #ccc;
     padding: 0;
+    background-color: #ddd;
   }
   
   a {
@@ -42,6 +44,6 @@ body {
   }
   
   a:hover {
-    background-color: #000000;
+    background-color: #356895;
     color: #ffffff;
   }
