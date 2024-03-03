@@ -1,0 +1,40 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>SCRIPT BUCLES ANIDADOS</h1>
+        <script>
+
+        function PintaAsteriscos(dato1){
+            var dato1;
+            var i;
+            i=1;
+            while(i<=dato1){
+                document.write("* ");
+                i=i+1;
+            }
+        }
+
+        function Principal(){
+            j=1
+            dato1=document.getElementById("dato").value
+            while ( j<=dato1 ){
+                PintaAsteriscos(j);
+                document.write("<br>")
+                j=j+1;
+            }
+        }
+            
+        </script>
+
+            <input type="text" id="dato">
+            <input type="button" value="DIBUJA" onclick="Principal()">
+                
+            
+        
+
+    
+    </body>
+
+</html>

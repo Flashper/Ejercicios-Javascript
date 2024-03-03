@@ -1,0 +1,33 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Tabla en una funcion</h1>
+        <script>
+
+            function tabla(l){
+               
+                document.write("Tabla de multiplicar del numero ",l,"<br>");
+            
+                document.write("<table border=1>");
+                document.write("<tr>");
+                document.write("<th>","Multiplos","</th>","<th>","Resultado","</th>")
+                document.write("</tr>");
+
+                for(i = 1; i <= 10; i++){
+                    document.write("<td>",l," * ",i," = ","</td>","<td>",l*i,"</td>")
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+
+
+            }
+         tabla(9);
+        </script>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Tabla multiplicar</h1>
+
+        <script>
+            function palabra(){
+            var palabra=document.getElementById("texto").value;
+            var i=0
+
+            while(i<palabra.length){
+                document.write("<ul>");
+                    document.write("<li>",palabra.charAt(i),"</li>");
+                document.write("</ul>");
+                i++
+            }
+        }
+    
+        </script>
+        <input type="text" id="texto" size="10">
+        <input type="button" onclick=palabra() value="LETRAS">
+ 
+
+    </body>
+
+</html>

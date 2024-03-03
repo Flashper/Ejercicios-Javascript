@@ -1,0 +1,42 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Tabla multiplicar</h1>
+
+        <script>
+            function galeriaHor(){
+                document.write("<table border=1><tr>")
+                var numero=parseInt(prompt("Dime el número de fotos"));
+                let i=0
+                
+                while(i<numero){
+                    document.write("<td><img src=xavicesped.jpeg></td>");
+                    i++
+                    }
+                document.write("</tr></table>")
+ 
+                }
+            function galeriaVer(){
+                document.write("<table border=1>")
+                var numero=parseInt(prompt("Dime el número de fotos"));
+                let i=0
+
+                while(i<numero){
+                document.write("<tr><td><img src=xavicesped.jpeg></td></tr>");
+                i++
+                }
+                document.write("</table>")
+            }
+        </script>
+           
+        <script>
+            galeriaHor();
+            document.write("<br>");
+            galeriaVer();
+        </script>
+
+    </body>
+
+</html>

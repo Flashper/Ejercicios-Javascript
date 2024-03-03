@@ -1,0 +1,41 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>EJERCICIO EN JAVASCRIPT</h1>
+
+        <script>
+            size = 10
+function createMultiplicationTables(size) {
+  const tables = [];
+
+  for (let i = 1; i <= size; i++) {
+    const tableRow = [];
+
+    for (let j = 1; j <= size; j++) {
+      tableRow.push(i * j);
+    }
+
+    tables.push(tableRow);
+  }
+
+  return tables;
+}
+
+let tables = createMultiplicationTables(10);
+
+for (let i = 1; i <= 10; i++) {
+ document.write(`Tabla del ${i}:`);
+ for (let j = 1; j <= 10; j++) {
+    document.write(`${i} * ${j} = ${tables[i - 1][j - 1]}`);
+ }
+ document.write('');
+}
+</script>
+<script>
+createMultiplicationTables(10);
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Vectores</h1>
+        <script>
+
+        nombre=["Ana","Pedro","Pepe","Ivan"];
+        notas=[5,7,9,6];
+        i=0;
+        media=0.0;
+        var minimo =notas[0];
+        var maximo =notas[0];
+        posmin =0
+        posmax =0
+
+        while( i < notas.length ){
+            if(notas[i] < minimo){
+                minimo = notas[i];
+            }
+            if(notas[i] > maximo){
+                maximo = notas[i];
+            }
+
+            document.write(nombre[i]," ",notas[i],"<br>");
+
+            media=media+notas[i];
+
+            i++;
+
+        }
+        document.write("La nota minima es ",minimo,"<br>");
+        document.write("La nota maxima es ",maximo,"<br>");
+        document.write("La nota media es ",media/notas.length,"<br>");
+
+
+        </script>
+
+
+
+    </body>
+
+</html>

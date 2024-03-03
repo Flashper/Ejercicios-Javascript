@@ -1,0 +1,62 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Galeria horizontal vertical y ambas</h1>
+
+        <script>
+            function galeriahor(){
+                var i=0
+                numero=parseInt(prompt("Dame el número de fotos a mostrar"));
+
+                document.write("<table border=1><tr>")
+                while(i<numero){
+                    document.write("<td><img src=xavicesped.jpeg></td>");
+                    i++
+                }
+                document.write("</tr></table>")
+
+            }
+
+            function galeriaver(){
+                var l=0
+                num=parseInt(prompt("Dame el número de fotos a mostrar"));
+                
+                document.write("<table border=1>")
+                while(l<num){
+                    document.write("<tr><td><img src=xavicesped.jpeg></td></tr>");
+                    l++
+                }
+                document.write("</table>")
+
+            }
+
+            function galerias(){
+                var opcion=document.getElementById("seleccion").value;
+            
+                if(opcion=="HORIZONTAL"){
+                    galeriahor();
+                }
+                else if(opcion=="VERTICAL"){
+                    galeriaver();
+                }
+                else if(opcion=="AMBAS"){
+                    galeriahor();
+                    galeriaver();
+                }
+            }
+            
+        </script>
+            <select id="seleccion" onchange="galerias()">
+                <option></option>
+                <option>HORIZONTAL</option>
+                <option>VERTICAL</option>
+                <option>AMBAS</option>
+
+            </select>
+ 
+
+    </body>
+
+</html>

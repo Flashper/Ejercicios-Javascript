@@ -1,0 +1,25 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Tabla multiplicar</h1>
+
+        <script>
+            var numero=parseInt(prompt("Dime el número para generar su tabla de multiplicar "));
+            var multiplo=1
+
+            document.write("<table border=1>");
+                document.write("<tr>");
+            while(multiplo<=10){
+                document.write("<td>",numero," * ",multiplo," = ","</td>","<td>",numero*multiplo,"</td>");
+                document.write("</tr>");
+
+                multiplo++
+            }
+
+        </script>
+
+    </body>
+
+</html>

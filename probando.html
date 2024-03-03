@@ -1,0 +1,65 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>vectores</h1>
+        <script>
+
+            nombre =[];
+            nota =[];
+            datos = parseInt(prompt("¿Cuántos datos quieres introducir?"));
+            i =0;
+            media =0.0
+            notamin =Infinity;
+            notamax =-Infinity;
+            posmin =0;
+            posmax =0;
+            var nom
+            var not
+
+            for(i=0; i < datos; i++){
+                nom =prompt("Introduce el nombre");
+                nombre.push(nom);
+                not =parseInt(prompt("Introduce la nota"));
+                nota.push(not);
+            }
+            
+            document.write("Nombres ",nombre);
+            document.write("<br>");
+            document.write("Notas ",nota);
+            document.write("<br>");
+
+
+
+            i=0;
+
+            while(i < nota.length ){
+                if(nota[i] < notamin){
+                   notamin =nota[i];
+                   posmin =i;
+                }
+                if(nota[i] > notamax){
+                   notamax =nota[i];
+                   posmax =i;
+                }
+
+
+                document.write(nombre[i]," Tiene una nota de ",nota[i],"<br>");
+                media = media+nota[i]
+                i++;
+            
+                
+            }
+
+            document.write("La nota mínima es ",notamin,"<br>");
+            document.write("La nota máxima es ",notamax,"<br>");
+            document.write("La nota media es ",media/nota.length,"<br>");
+            document.write(nombre[posmin]," ",nota[posmin],"<br>");
+            document.write(nombre[posmax]," ",nota[posmax]);
+
+        </script>
+
+    </body>
+
+</html>
