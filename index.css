@@ -9,7 +9,7 @@ body {
   
   table {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     border-collapse: collapse;
   }
   
@@ -25,7 +25,6 @@ body {
   }
   
   td {
-    padding: 0;
     background-color: #ddd;
   }
   
