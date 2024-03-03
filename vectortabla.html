@@ -1,0 +1,60 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>vectores</h1>
+        <script>
+            media=0.0;
+            nombre =["Ana","Pedro","Luis","Pepe"];
+            v =[5,8,2,1];
+            i=0;
+            var minimo = v[0];
+            var maximo = v[0];
+
+            document.write("<table border=1>");
+            document.write("<tr>"); 
+                document.write("<th>","Nombre","</th>"); 
+                document.write("<th>","Nota","</th>");
+            document.write("</tr>"); 
+
+            while( i < v.length ){
+                if(v[i] < minimo){
+                    minimo = v[i];
+                }
+                if(v[i] > maximo){
+                    maximo = v[i];
+                }
+
+                document.write("<tr>"); 
+                    document.write("<td width=50>",nombre[i],"</td>"); 
+                    document.write("<td>",v[i],"</td>");
+                document.write("</tr>"); 
+
+                media=media+v[i];
+
+                i=i+1;
+        
+            }
+            document.write("</table>");
+            document.write("<br>");
+
+                document.write("<table border=1>");
+                document.write("<tr>"); 
+                    document.write("<th>","Nota Máxima","</th>"); 
+                    document.write("<th>","Nota Mínima","</th>");
+                    document.write("<th>","Nota Media","</th>");
+                document.write("</tr>"); 
+
+                document.write("<tr>"); 
+                    document.write("<td align=center>",maximo,"</td>");
+                    document.write("<td align=center>",minimo,"</td>");
+                    document.write("<td align=center>",media/v.length,"</td>");
+                document.write("</tr>"); 
+            document.write("</table>");
+
+
+        </script>
+    </body>
+
+</html>
